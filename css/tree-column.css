@@ -1,0 +1,87 @@
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+*{
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background-color: var(--Transparent-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.countiner{
+    display: flex;
+    width: 800px;
+    height: 500PX;
+
+    /* background-color: aquamarine; */
+}
+.card{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    /* margin: 20px; */
+    justify-content: center;
+    align-items: center;
+    /* gap: 16px; */
+}
+.one{
+    background-color: var(--Bright-orange);
+    border-radius: 12px 0 0 12px ;
+
+}
+.two{
+    background-color: var(--Dark-cyan);
+}
+.tree{
+    background-color:var(--Very-dark-cyan);
+    border-radius: 0 12px 12px  0 ;
+}
+.one, .two, .tree{
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+.title{
+    color: white;
+    margin-top: 16px;
+    font-size: 40px;
+    font-family: 'Big Shoulders Display', sans-serif;
+    
+}
+h2{
+    margin-top: 14px;
+    color: var(--Transparent-white);
+    font-size: 20px;
+}
+button{
+    color: var(--Bright-orange);
+    font-weight: bold;
+    padding: 15px;
+    width: 55%;
+    border-style: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.two button{
+    color: var(--Dark-cyan);
+}
+.tree button{
+    color: var(--Very-dark-cyan);
+}
